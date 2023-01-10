@@ -52,6 +52,10 @@ h1 {
   padding: 1.5rem;
 }
 
+.loader {
+  position: relative;
+}
+
 p {
   padding-bottom: 20px;
 }
@@ -213,11 +217,6 @@ p {
 /* ----- LOADER 5 ENDS HERE ----- */
 
 /* ----- LOADER 6 STARTS HERE ----- */
-
-.loader--6 {
-  position: relative;
-}
-
 .loader--6 span {
   display: block;
   margin-top: 1rem;
@@ -242,3 +241,29 @@ p {
   }
 }
 /* ----- LOADER 6 ENDS HERE ----- */
+
+/* ----- LOADER 7 STARTS HERE ----- */
+.loader--7 .line {
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  animation: rotateRight 2s 0.5s infinite;
+}
+
+@keyframes rotateRight {
+  0% {
+    left: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    left: 80%;
+    transform: rotate(360deg);
+  }
+
+  100% {
+    left: 0;
+    transform: rotate(0);
+  }
+}
+/* ----- LOADER 7 ENDS HERE ----- */

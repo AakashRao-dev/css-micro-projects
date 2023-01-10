@@ -211,3 +211,34 @@ p {
   }
 }
 /* ----- LOADER 5 ENDS HERE ----- */
+
+/* ----- LOADER 6 STARTS HERE ----- */
+
+.loader--6 {
+  position: relative;
+}
+
+.loader--6 span {
+  display: block;
+  margin-top: 1rem;
+}
+
+.loader--6 .shine {
+  width: 15px;
+  height: 40px;
+  background: #d8d8d8;
+  position: absolute;
+  bottom: -10px;
+  animation: shineRight 2s 0.5s infinite;
+}
+
+@keyframes shineRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(80px);
+  }
+}
+/* ----- LOADER 6 ENDS HERE ----- */

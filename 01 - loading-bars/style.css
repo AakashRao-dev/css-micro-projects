@@ -46,7 +46,7 @@ h1 {
 .load-wrap {
   width: 100%;
   max-width: 150px;
-  min-height: 120px;
+  min-height: 160px;
   background: #d8d8d8;
   border-radius: calc(var(--spacing) * 0.5);
   padding: 1.5rem;
@@ -72,15 +72,16 @@ p {
   width: 50px;
   height: 50px;
   border-radius: 100px;
-  margin: auto;
 }
 
 .ring--1 {
   border: 7px dashed #262626;
+  margin: auto;
 }
 
 .ring--2 {
   border: 4px solid #262626;
+  margin: auto;
 }
 
 .ring--2 > .small-ring {
@@ -89,6 +90,12 @@ p {
   background: #262626;
   border-radius: 50px;
   transform: translateY(-4px);
+}
+
+.bubble {
+  margin: 10px auto;
+  background: #262626;
+  border-radius: 100px;
 }
 
 /*========= LOADER ANIMATION =========
@@ -290,3 +297,44 @@ p {
   }
 }
 /* ----- LOADER 8 ENDS HERE ----- */
+
+/* ----- LOADER 9 STARTS HERE ----- */
+.loader--9 .spinner {
+  animation: spin 2s linear infinite;
+}
+
+.loader--9 .bubble--1 {
+  animation: bubble 1.5s 0s infinite;
+}
+
+.loader--9 .bubble--2 {
+  animation: bubble 1.5s 2s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bubble {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+/* ----- LOADER 9 ENDS HERE ----- */

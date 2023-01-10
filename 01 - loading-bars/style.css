@@ -338,3 +338,28 @@ p {
   }
 }
 /* ----- LOADER 9 ENDS HERE ----- */
+
+/* ----- LOADER 10 STARTS HERE ----- */
+.loader--10 .line {
+  position: absolute;
+  left: 0;
+  height: 10px;
+  animation: colorChangeRight 2s 0.5s infinite;
+}
+
+@keyframes colorChangeRight {
+  0% {
+    width: 10px;
+  }
+
+  50% {
+    width: 30px;
+    left: 70%;
+    background: purple;
+  }
+
+  100% {
+    width: 10px;
+  }
+}
+/* ----- LOADER 10 ENDS HERE ----- */
